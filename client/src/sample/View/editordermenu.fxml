@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="775.0" style="-fx-background-color: rgb(44,62,80);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.EditOrder">
+   <children>
+      <AnchorPane prefHeight="19.0" prefWidth="775.0" style="-fx-background-color: rgb(248,148,6);">
+         <children>
+            <Label layoutX="232.0" text="Добавление заказа" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="42.0" text="Выберите авто и клиента, чтобы добавить заказ" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="bExit" layoutX="681.0" layoutY="635.0" mnemonicParsing="false" onAction="#clickExit" prefHeight="33.0" prefWidth="80.0" style="-fx-background-color: rgb(34, 167, 240);" text="Назад" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="bEditOrder" layoutX="427.0" layoutY="635.0" mnemonicParsing="false" onAction="#clickEditOrder" prefHeight="33.0" prefWidth="122.0" style="-fx-background-color: rgb(192, 57, 43);" text="Добавить заказ" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableClient" editable="true" layoutX="22.0" layoutY="370.0" prefHeight="256.0" prefWidth="743.0" style="-fx-background-color: rgb(108,122,137); -fx-text-inner-color: rgb(228,241,254);">
+         <columns>
+            <TableColumn fx:id="cId" prefWidth="78.0" style="-fx-text-inner-color: rgb(228,241,254);" text="id" />
+            <TableColumn fx:id="cSurname" minWidth="9.0" prefWidth="95.0" style="-fx-text-inner-color: rgb(228,241,254);" text="surname" />
+            <TableColumn fx:id="cName" minWidth="9.0" prefWidth="95.0" style="-fx-text-inner-color: rgb(228,241,254);" text="name" />
+            <TableColumn fx:id="cMiddleName" minWidth="9.0" prefWidth="95.0" style="-fx-text-inner-color: rgb(228,241,254);" text="middle name" />
+            <TableColumn fx:id="cPhone" minWidth="9.0" prefWidth="96.0" style="-fx-text-inner-color: rgb(228,241,254);" text="phone" />
+            <TableColumn fx:id="cEmail" minWidth="9.0" prefWidth="113.0" style="-fx-text-inner-color: rgb(228,241,254);" text="email" />
+            <TableColumn fx:id="cAddress" minWidth="9.0" prefWidth="170.0" style="-fx-text-inner-color: rgb(228,241,254);" text="address" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableCar" editable="true" layoutX="22.0" layoutY="101.0" prefHeight="256.0" prefWidth="743.0" style="-fx-background-color: rgb(108,122,137); -fx-text-inner-color: rgb(228,241,254);">
+         <columns>
+            <TableColumn fx:id="cVIN" prefWidth="78.0" style="-fx-text-inner-color: rgb(228,241,254);" text="VIN" />
+            <TableColumn fx:id="cBrand" minWidth="9.0" prefWidth="95.0" style="-fx-text-inner-color: rgb(228,241,254);" text="brand" />
+            <TableColumn fx:id="cmodel" minWidth="9.0" prefWidth="95.0" style="-fx-text-inner-color: rgb(228,241,254);" text="model" />
+            <TableColumn fx:id="cPower" minWidth="9.0" prefWidth="95.0" style="-fx-text-inner-color: rgb(228,241,254);" text="power" />
+            <TableColumn fx:id="cColor" minWidth="9.0" prefWidth="95.0" style="-fx-text-inner-color: rgb(228,241,254);" text="color" />
+            <TableColumn fx:id="cBodyType" minWidth="9.0" prefWidth="95.0" style="-fx-text-inner-color: rgb(228,241,254);" text="bodyType" />
+            <TableColumn fx:id="cdateOfRelease" minWidth="9.0" prefWidth="95.0" style="-fx-text-inner-color: rgb(228,241,254);" text="dateOfRelease" />
+            <TableColumn fx:id="cPrice" minWidth="9.0" prefWidth="95.0" style="-fx-text-inner-color: rgb(228,241,254);" text="price" />
+         </columns>
+      </TableView>
+      <Button fx:id="FindClient" layoutX="22.0" layoutY="635.0" mnemonicParsing="false" onAction="#clickFindClient" prefHeight="33.0" prefWidth="122.0" style="-fx-background-color: rgb(192, 57, 43);" text="Поиск клиента" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bFindCar" layoutX="157.0" layoutY="635.0" mnemonicParsing="false" onAction="#clickFindCar" prefHeight="33.0" prefWidth="122.0" style="-fx-background-color: rgb(192, 57, 43);" text="Поиск авто" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bCancel" layoutX="292.0" layoutY="635.0" mnemonicParsing="false" onAction="#clickCancel" prefHeight="33.0" prefWidth="122.0" style="-fx-background-color: rgb(192, 57, 43);" text="Отменить поиск" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

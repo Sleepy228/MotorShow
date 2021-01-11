@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="562.0" style="-fx-background-color: rgb(44,62,80);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.AdminEditMenu">
+   <children>
+      <AnchorPane prefHeight="77.0" prefWidth="562.0" style="-fx-background-color: rgb(248,148,6);">
+         <children>
+            <Label layoutX="138.0" layoutY="17.0" text="Меню добавления" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="bExit" layoutX="456.0" layoutY="307.0" mnemonicParsing="false" onAction="#clickExit" prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: rgb(34, 167, 240);" text="Назад" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="bEditClient" layoutX="45.0" layoutY="192.0" mnemonicParsing="false" onAction="#clickEditClient" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: rgb(192, 57, 43);" text="Добавить клиента" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bEditOrder" layoutX="206.0" layoutY="192.0" mnemonicParsing="false" onAction="#clickEditOrder" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: rgb(192, 57, 43);" text="Добавить заказ" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bEditCar" layoutX="370.0" layoutY="137.0" mnemonicParsing="false" onAction="#clickEditCar" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: rgb(192, 57, 43);" text="Добавить машину" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bEditBrand" layoutX="45.0" layoutY="137.0" mnemonicParsing="false" onAction="#clickEditBrand" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: rgb(192, 57, 43);" text="Добавить марку" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bVEditModel" layoutX="208.0" layoutY="137.0" mnemonicParsing="false" onAction="#clickEditModel" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: rgb(192, 57, 43);" text="Добавить модель" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bEditEmployee" layoutX="371.0" layoutY="192.0" mnemonicParsing="false" onAction="#clickEditEmployee" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: rgb(192, 57, 43);" text="Добавить сотрудника" textFill="#ecf0f1">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
