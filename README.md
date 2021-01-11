@@ -41,3 +41,9 @@ Structure client:
 * Files create the user interface: ```View/```
 * Form opening/closing handlers: ```Windows/```
 * The startup file of the user interface: ```Main```
+
+Technology
+-----
+- javafx-sdk-11.0.2;
+- mysql-connector-java-8.0.22
+- MySQL;
